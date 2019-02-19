@@ -1,5 +1,4 @@
-module.exports = function getZerosCount(number, base) {
-  // your implementation
+function getZerosCount(number, base) {
     let fs=[]; // work array
     let divider=2; // divider
     while(divider<base){
@@ -38,3 +37,5 @@ module.exports = function getZerosCount(number, base) {
     }
     return Math.min.apply(Math,zeros); //returns the minimum number of zeros
 }
+console.log(getZerosCount(46899647,232));
+console.log(getZerosCount(71398757,12));
